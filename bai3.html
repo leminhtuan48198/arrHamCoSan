@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str=prompt("Nhap chuoi ki tu bat ki");
+    let arr=[];
+    let upcase="ABCDEFGHIJKLMNOPQRSTVUXYWJFZ";
+    let downcase="qwertyuiopasdfghjklzxcvbnm";
+    for (let i=0;i<str.length;i++){
+        if (upcase.indexOf(str[i]) !==-1){
+            arr.push(str[i].toLowerCase())
+        } else if (downcase.indexOf(str[i])!==-1) {
+            arr.push(str[i].toUpperCase())
+        } else {
+            arr.push(str[i])
+        }
+
+    }
+    document.write(arr.join(''))
+</script>
+</body>
+</html>
